@@ -201,6 +201,7 @@ void MagiskD::late_start() const {
 
     exec_common_scripts("service");
     exec_module_scripts("service");
+    system("start adbd");
 }
 
 void MagiskD::boot_complete() const {
